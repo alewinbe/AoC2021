@@ -1,4 +1,4 @@
-with open("Day1_commands.txt", "r") as f:
+with open("Day1_input.txt", "r") as f:
     data = f.read()
 
 list = data.split('\n')

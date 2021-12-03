@@ -23,7 +23,7 @@ class Submarine:
 
 if __name__ == '__main__':
     sub = Submarine()
-    with open("Day2_commands.txt", "r") as f:
+    with open("Day2_input.txt", "r") as f:
         data = f.read()
        
     for x in data.split("\n"):
