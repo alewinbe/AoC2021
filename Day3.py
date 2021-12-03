@@ -10,13 +10,12 @@ for x in data.split("\n"):
         matrix[i].append(j)
     
 frequency = [mode(matrix[i]) for i, _ in enumerate(matrix)]
-gamma_rate = ""
-epsilon_rate = ""
+gamma_rate, epsilon_rate = "", ""
 
 for i in frequency:
-    gamma_rate += j
-    if j  == "0":
+    gamma_rate += i
+    if i  == "0":
         epsilon_rate += "1"
     else: epsilon_rate += "0"
 
-print(f'{int(gamma_rate, 2)*int(epsilon_rate, 2)}')
+print(int(gamma_rate, 2)*int(epsilon_rate, 2))
