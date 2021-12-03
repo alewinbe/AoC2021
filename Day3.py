@@ -13,7 +13,7 @@ frequency = [mode(matrix[i]) for i, _ in enumerate(matrix)]
 gamma_rate = ""
 epsilon_rate = ""
 
-for i, j in enumerate(frequency):
+for i in frequency:
     gamma_rate += j
     if j  == "0":
         epsilon_rate += "1"
